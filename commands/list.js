@@ -33,16 +33,22 @@ module.exports = async function (numEntries, dResponse) {
     .setColor("#0099ff")
     .setTitle("List").setDescription(`Showing top ${numEntries} entries:
     ------------------------------------------------------------`);
-  data.data.values.forEach((element) => {
-    embedMessage.addField("Title", element[0], true);
-    embedMessage.addField("Content", element[1], true);
-    if (element[2] != undefined) {
-      embedMessage.addField("Description", element[2], true);
-    }
-    if (element[3] != undefined) {
-      embedMessage.addField("Link", element[3], true);
-    }
-    embedMessage.addField("\u200B", "\u200B");
-  });
-  dResponse.channel.send(embedMessage);
+  if (data.data.values != undefined) {
+    data.data.values.forEach((element) => {
+      embedMessage.addField("Title", element[0], true);
+      embedMessage.addField("Content", element[1], true);
+      if (element[2] != undefined) {
+        embedMessage.addField("Description", element[2], true);
+      }
+      if (element[3] != undefined) {
+        embedMessage.addField("Link", element[3], true);
+      }
+      embedMessage.addField("\u200B", "\u200B");
+    });
+    dResponse.channel.send(embedMessage);
+  }else{
+    embedMessage.addField("Oops", "No list found", false);
+    dResponse.channel.send(embedMessage);
+
+  }
 };
