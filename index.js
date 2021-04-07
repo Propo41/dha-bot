@@ -4,7 +4,7 @@ require("dotenv").config();
 const client = new Discord.Client();
 const commandHandler = require("./commands");
 const ANNOUNCEMENTS_CHANNEL_ID = "789966208514129972";
-const NOTICE_FETCH_DELAY = 3*60*60*1000; // 3 HOURS
+const NOTICE_FETCH_DELAY = 3 * 60 * 60 * 1000; // 3 HOURS
 
 // triggered when bot is online
 client.once("ready", () => {
@@ -20,7 +20,7 @@ function runNoticeFetcher() {
   Notice()
     .then((notice) => {
       if (notice != null) {
-        embedNews(notice);
+        embedNotice(notice);
       } else {
         console.log("nothing new added.");
       }
@@ -42,7 +42,7 @@ client.on("message", commandHandler);
 // this is the bot token found in discord console
 client.login(process.env.BOT_TOKEN);
 
-function embedNews(news) {
+function embedNotice(news) {
   var embedMessage = new Discord.MessageEmbed()
     .setColor("#2B9920")
     .setTitle("AUST Latest News")
@@ -52,7 +52,10 @@ function embedNews(news) {
     )
     .setThumbnail("https://imgur.com/cu4zALa.png");
   news.forEach((element) => {
-    embedMessage.addField(element.date, `**${element.title}**\n${element.description}\n${element.link}`);
+    embedMessage.addField(
+      element.date,
+      `**${element.title}**\n${element.description}\n${element.link}`
+    );
   });
   client.channels.cache.get(ANNOUNCEMENTS_CHANNEL_ID).send(embedMessage);
 }
