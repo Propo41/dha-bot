@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const Notice = require("./commands/notice_event.js");
 require("dotenv").config();
-const client = new Discord.Client();
+const client = new Discord.Client({disableEveryone: false});
 const commandHandler = require("./commands");
 const ANNOUNCEMENTS_CHANNEL_ID = "789966208514129972";
 const NOTICE_FETCH_DELAY = 3 * 60 * 60 * 1000; // 3 HOURS
@@ -45,9 +45,9 @@ client.login(process.env.BOT_TOKEN);
 function embedNotice(news) {
   var embedMessage = new Discord.MessageEmbed()
     .setColor("#2B9920")
-    .setTitle("AUST Latest News")
+    .setTitle("AUST Latest Notice 📰")
     .setDescription(
-      `Showing the latest news from the aust website:
+      `Showing the latest notices from the aust website:
 ------------------------------------------------------------`
     )
     .setThumbnail("https://imgur.com/cu4zALa.png");
@@ -58,4 +58,6 @@ function embedNotice(news) {
     );
   });
   client.channels.cache.get(ANNOUNCEMENTS_CHANNEL_ID).send(embedMessage);
+  client.channels.cache.get(ANNOUNCEMENTS_CHANNEL_ID).send('<@&789974376568848394>');
+
 }
