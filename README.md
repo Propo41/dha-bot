@@ -1,5 +1,9 @@
 # dha-bot
-A discord bot made for storing resources in google sheet and then showing them out when prompted.
+A discord bot for everyday uses. The bot can do the following tasks:
+- play audio clips from a given pool.
+- save content to google sheets and fetch them
+- automatically fetches latest news from my university's website at every 3 hours and displays them
+- generate GIF files from tenor
 
 invite link: https://discord.com/api/oauth2/authorize?client_id=828623998589337620&permissions=3263488&scope=bot 
 
