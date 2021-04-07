@@ -10,6 +10,7 @@ invite link: https://discord.com/api/oauth2/authorize?client_id=8286239985893376
 Objective:
 - learn how the functionalities of a discord bot using javascript
 - learn how to work with REST api's namely google-sheet api
+- learn how to use cheerio to scrape website content
 
 ![image](https://user-images.githubusercontent.com/46298019/113638741-65fa5780-9699-11eb-80c1-859dc9937728.png)
 
