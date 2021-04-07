@@ -3,6 +3,7 @@ const save = require("./commands/save.js");
 const list = require("./commands/list.js");
 const help = require("./commands/help.js");
 const play = require("./commands/play.js");
+const news = require("./commands/news.js");
 
 const commands = {
   gif,
@@ -10,6 +11,7 @@ const commands = {
   list,
   help,
   play,
+  news
 };
 module.exports = function (res) {
   let tokens = res.content.split(" ");

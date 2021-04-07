@@ -7,7 +7,7 @@ module.exports = async function (numEntries, dResponse) {
     .setTitle("Help")
     .setDescription("Values marked with * are mandatory")
     .addFields(
-      { name: "For getting a gif:", value: "$gif <keyword>" },
+      { name: "For generating a gif:", value: "$gif <keyword>" },
       {
         name: "To list all rows:",
         value: "$list <numberOfEntriesToReturn>",
@@ -15,8 +15,24 @@ module.exports = async function (numEntries, dResponse) {
       {
         name: "To save a new entry:",
         value: "$save <title*> <content*> <description> <link>",
+      },
+      {
+        name: "To play a sound effect:",
+        value: "$play <filename>",
+      },
+      {
+        name: "To list all available sound effects:",
+        value: "$play help",
+      },
+      {
+        name: "To a random sound effect:",
+        value: "$play",
+      },
+      {
+        name: "To fetch a news from Aust website",
+        value: "$news <numberOfEntries>",
       }
     );
-    
+
   dResponse.channel.send(embedMessage);
 };
