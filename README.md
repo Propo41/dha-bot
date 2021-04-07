@@ -1,5 +1,5 @@
 # dha-bot
-A discord bot for everyday uses. The bot can do the following tasks:
+A discord bot for everyday use. The bot can do the following tasks:
 - play audio clips from a given pool.
 - save content to google sheets and fetch them
 - automatically fetches latest news from my university's website at every 3 hours and displays them
