@@ -12,17 +12,26 @@ Objective:
 - learn how to work with REST api's namely google-sheet api
 - learn how to use cheerio to scrape website content
 
-![image](https://user-images.githubusercontent.com/46298019/113638741-65fa5780-9699-11eb-80c1-859dc9937728.png)
 
-![image](https://user-images.githubusercontent.com/46298019/113638762-6eeb2900-9699-11eb-9a95-f2c90ba68e5f.png)
+![image](https://user-images.githubusercontent.com/46298019/114170709-21024980-9955-11eb-93ac-075b9f01b38b.png)
 
-![image](https://user-images.githubusercontent.com/46298019/113638781-79a5be00-9699-11eb-9b99-abb9452ba90f.png)
+![image](https://user-images.githubusercontent.com/46298019/114170618-016b2100-9955-11eb-8b46-0aeb86d13fcd.png)
 
-![image](https://user-images.githubusercontent.com/46298019/113901616-da93da00-97f0-11eb-97f0-47a63b3e04ea.png)
+![image](https://user-images.githubusercontent.com/46298019/114170632-07f99880-9955-11eb-939e-655d1436b265.png)
 
-![image](https://user-images.githubusercontent.com/46298019/113901678-e8e1f600-97f0-11eb-9d6b-97f9a7884606.png)
+![image](https://user-images.githubusercontent.com/46298019/114170730-2790c100-9955-11eb-8634-7006326bc07d.png)
 
-![image](https://user-images.githubusercontent.com/46298019/113901731-f6977b80-97f0-11eb-9870-b92189885b3f.png)
+![image](https://user-images.githubusercontent.com/46298019/114170884-60c93100-9955-11eb-88b8-1f62d740606f.png)
+
+![image](https://user-images.githubusercontent.com/46298019/114170920-6de62000-9955-11eb-9a69-5a01b764d8f1.png)
+
+![image](https://user-images.githubusercontent.com/46298019/114171050-92da9300-9955-11eb-82f3-4dd740d5fb27.png)
+
+
+
+
+
+
 
 
 
